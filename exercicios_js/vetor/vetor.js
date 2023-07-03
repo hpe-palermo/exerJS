@@ -5,31 +5,26 @@ frm.addEventListener("submit",(e)=>{
     e.preventDefault()
 
     const frase = frm.texto.value
-    const vetor = frase.split(";")
+    const termo = frm.addTexto.value
+    let indices = frm.indices.value.split(" ")
+    indices = Array.from(new Set(indices))
+    indices = indices.filter((elem) => {
+        return elem != ""
+    })
+    indices = indices.map((elem) => Number(elem))
 
-    let palavra = []
-    let indices = []
-    for (let i = 0; i < vetor[0].length; i++) {
-        palavra.push(frase[i])
-        if(i>1)
-        indices.push(vetor[i])
-    }
-    
-    alterarTexto(palavra,vetor[1],vetor)
+    alterarTexto(frase,termo,indices)
     
 })
 
-function alterarTexto(palavra,addTexto,vetor) {
-    let palavravetor = []
+function alterarTexto(palavra,addTexto,indices) {
+    let palavravetor = []    
 
     for (let i = 0; i < palavra.length; i++) {
-        for (let j = 2; j < vetor.length; j++) {
-            if (i == Number(vetor[j])){
-                palavravetor.push(addTexto)
-            }
+        if(indices.includes(i)){
+            palavravetor.push(addTexto)
         }
         palavravetor.push(palavra[i])
     }
-    
     saida.innerText = palavravetor.join("")
 }
