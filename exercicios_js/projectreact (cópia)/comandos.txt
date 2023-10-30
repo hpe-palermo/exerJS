@@ -1,0 +1,6 @@
+npm create vite
+npm install
+cd NOME_PROJETO
+npm run dev
+npm install styled-components
+instalar extensao "styled-components-snippets"
