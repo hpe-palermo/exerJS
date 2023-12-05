@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        canvas {
+          border: 1px solid black;
+        }
+      </style>
+</head>
+
+<body>
+    <canvas id="canvas" width="900" height="500">ERRO</canvas>
+    
+    <script>
+        function cropImg() {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+
+            var image = new Image();
+            image.src = 'teste.png'
+            image.onload = function () {
+                let largura = 300
+                let altura = 200
+                ctx.drawImage(image, 80, 90, largura, altura, 0, 0, largura, altura);
+            }
+        }
+
+        cropImg();
+    </script>
+</body>
+
+</html>
