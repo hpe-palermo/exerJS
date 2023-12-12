@@ -1,0 +1,52 @@
+ul{
+    list-style: upper-alpha;
+}
+
+#corpoHeader{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+#verGabarito, #jogar_denovo{
+    display: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} 
+
+#body{
+    background-color: rgb(75, 75, 219);
+    width: 70vw;
+    margin: 0;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#alinhar_ao_centro, .btn_centro{
+    text-align: center;
+}
+
+.inputs .seg_input{
+    margin-top: 50px;
+}
+
+#gerarTrivia{
+    margin: 20px 0 0 0;
+}
+
+.ocultar{
+    display: none;
+}
+
+#questionario, #gabarito{
+    background-color: rgb(108, 108, 253); 
+    overflow-y: auto;
+    margin: 0;
+    padding: 5px;
+    height: max-content;
+}
