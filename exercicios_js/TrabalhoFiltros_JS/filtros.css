@@ -1,0 +1,57 @@
+body{
+    background-color: /*rgb(114, 114, 114);*/#5e85a2;
+    background-image: url("xadrezinho.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex; 
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    background-color: #10292c;
+    color: aqua;
+    border-radius: 8px;
+    width: 100%;
+    padding: 8px 15px;
+    margin: 5px 0;
+}
+
+li:hover{
+    background-color: #00f;
+    color: #fff;
+}
+
+.hidden{
+    display: none
+}
+
+.nome-selecionado{
+    background-color: orange;
+    color: #fff;
+}
+
+.nome-nao-selecionado{
+    background-color: #10292c;
+    color: aqua;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    background-color: rgb(43, 83, 170);/*rgb(43, 83, 170); */
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+input[type=button]{
+    color: #fff;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="filtros.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Manipulação de Listas</h1>
+        <p id="aki">
+            <input type="text" placeholder="Escreva os nomes" class="form-control" id="searchField" autofocus>
+        </p>
+        <p>
+            <input type="button" class="btn btn-success" value="Adicionar &#10009;" id="btnAdicionar">
+            <input type="button" class="btn btn-info" value="Selecionar &#9745;" id="btnSelecionar">
+            <input type="button" class="btn btn-secondary" value="Filtrar &#9685;" id="btnFiltrar">
+            <input type="button" class="btn btn-danger" value="Remover &#10006;" id="btnRemover">
+        </p>
+        <ul id="list"></ul>
+    </div>
+    
+    <script src="filtros.js"></script>
+</body>
+</html>
